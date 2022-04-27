@@ -40,7 +40,6 @@ async function getLockerEvents(startBlock, endBlock) {
             toBlock: latest,
         }, () => {})
             .then(async (events) => {
-                //console.log(JSON.stringify(events));
                 for (let i = 0; i < events.length; i++) {
                     const transactionData = []
                     const logsData = []
@@ -72,7 +71,6 @@ async function getLockerEvents(startBlock, endBlock) {
             toBlock: latest,
         }, () => {})
             .then(async (events) => {
-                //console.log(JSON.stringify(events));
                 for (let i = 0; i < events.length; i++) {
                     const transactionData = []
                     const logsData = []
